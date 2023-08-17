@@ -1,0 +1,10 @@
+# POST method predict
+curl -d '{"CreditScore": 608, "Geography": "Spain", "Gender": "Female", "Age": 41, "Tenure": 1, "Balance": 83807.86, "NumOfProducts": 1, "HasCrCard": 0, "IsActiveMember": 1, "EstimatedSalary": 112542.58}' \
+     -H "Content-Type: application/json" \
+     -X POST http://0.0.0.0:8000/predict
+
+# GET method info
+curl -XGET http://localhost:8000/info_model
+
+# GET method health
+curl -XGET http://localhost:8000/Business

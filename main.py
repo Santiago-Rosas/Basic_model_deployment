@@ -15,7 +15,7 @@ version = "v1.0.0"
 
 @app.get('/', tags=['Home'])
 def message():
-    return HTMLResponse('<h1> This is a model to predict churn please go to http://localhost:8000/docs </h1>')
+    return HTMLResponse('<h1> This is a model to predict churn, please <a href="http://localhost:8000/docs">  click here </a>  for docs </h1>')
 
 
 @app.get('/info_model',tags=['Model information and services'])
